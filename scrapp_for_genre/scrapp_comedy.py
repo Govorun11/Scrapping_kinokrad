@@ -42,7 +42,6 @@ class FindMovieByGenre:
 read_write_code = RWCode()
 comedy = FindMovieByGenre('комедия', 2)
 
-
 if __name__ == '__main__':
     read_write_code.code_writing(comedy.SRC)
     # read_write_code.code_reading()
