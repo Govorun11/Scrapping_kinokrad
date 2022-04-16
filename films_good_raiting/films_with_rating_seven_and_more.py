@@ -20,8 +20,6 @@ class GoodRaitMovies:
         self.src = self.req.text
         self.soup = BeautifulSoup(self.src, 'lxml')
 
-
-
     def good_raiting_movies(self):
         all_films_in_page = self.soup.find_all('div', class_='shorposterbox')
         film_with_good_rating = [film for film in all_films_in_page
@@ -42,4 +40,3 @@ rwcode = ReadWrite()
 if __name__ == '__main__':
     rwcode.code_writing(movie.src)
     movie.good_raiting_movies()
-
